@@ -1,4 +1,4 @@
-window.fivem = new class {
+class UILib {
 	constructor() {
 		this.handlers = {};
 		window.addEventListener("message", (e) => this._handleMessage(e));
@@ -40,4 +40,4 @@ window.fivem = new class {
 	}
 }
 
-window.UILib = UILib;
+window.fivem = UILib;
