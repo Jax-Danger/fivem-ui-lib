@@ -1,4 +1,4 @@
-class UILib {
+new class UILib {
 	constructor() {
 		this.handlers = {};
 		window.addEventListener("message", (e) => this._handleMessage(e));
