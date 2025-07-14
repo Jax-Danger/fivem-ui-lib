@@ -40,4 +40,4 @@ class UILib {
 	}
 }
 
-window.fivem = UILib;
+window.fivem = new UILib();
