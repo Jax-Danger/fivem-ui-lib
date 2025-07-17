@@ -21,23 +21,6 @@ class UILib {
 			body: JSON.stringify(payload),
 		});
 	}
-
-	showNotification(text) {
-		const div = document.createElement('div');
-		div.textContent = text;
-		Object.assign(div.style, {
-			position: 'absolute',
-			top: '20px',
-			right: '20px',
-			padding: '10px',
-			background: 'black',
-			color: 'white',
-			fontFamily: 'sans-serif',
-			zIndex: 9999
-		});
-		document.body.appendChild(div);
-		setTimeout(() => div.remove(), 3000);
-	}
 }
 
 window.fivem = new UILib();
